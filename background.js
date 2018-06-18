@@ -1,14 +1,5 @@
 (() => {
   'use strict'
-  const instances = [
-    'https://mstdn.jp/',
-    'https://pawoo.net/',
-    'https://friends.nico/'
-  ]
-  const listenUrls = []
-  for (const instance of instances) {
-    listenUrls.push(instance + 'api/v1/statuses')
-  }
 
   const deleteToot = async (tootID) => {
     const xhr = new window.XMLHttpRequest()
