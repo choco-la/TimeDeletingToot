@@ -47,7 +47,11 @@
       const respStr = decoder.decode(event.data, {stream: true})
       const respJSON = JSON.parse(respStr)
       const tags = respJSON.tags
-      if (!tags) return
+      if (!tags) {
+        streamFilter.write(event.data)
+        streamFilter.close()
+        return
+      }
 
       const scaleToNumber = {
         s: 1,
