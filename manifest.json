@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "TimedDeletingToot",
+  "description": "Timed  Deleting Toot",
+  "version": "1.0",
+  "homepage_url": "https://github.com/choco-la/timedeletingtoot",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png",
+    "128": "icons/icon128.png"
+  },
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1",
+      "id": "timedeletingtoot@example.com",
+      "update_url": "https://choco-la.github.io/timedeletingtoot/update.json"
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "https://friends.nico/web/*",
+    "https://pawoo.net/web/*",
+    "https://mstdn.jp/web/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://friends.nico/web/*",
+        "https://pawoo.net/web/*",
+        "https://mstdn.jp/web/*"
+      ],
+      "js": [
+        "init.js"
+      ]
+    }
+  ]
+}
