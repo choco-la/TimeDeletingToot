@@ -4,7 +4,7 @@
   const bearerToken = initState.meta['access_token']
 
   const query = `access_token=${bearerToken}&stream=user`
-  const ws = new window.WebSocker(`wss://${window.location.hostname}?${query}`)
+  const ws = new window.WebSocket(`wss://${window.location.hostname}?${query}`)
 
   const scaleToNumber = {
     s: 1,
