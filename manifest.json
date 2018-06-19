@@ -13,7 +13,7 @@
     "gecko": {
       "strict_min_version": "57.0a1",
       "id": "timedeletingtoot@example.com",
-      "update_url": "https://choco-la.github.io/timedeletingtoot/update.json"
+      "update_url": "https://choco-la.github.io/TimeDeletingToot/update.json"
     }
   },
   "permissions": [
