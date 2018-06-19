@@ -1,0 +1,18 @@
+{
+	"addons": {
+		"timedeletingtoot@example.com": {
+			"updates": [
+				{
+					"version": "1.0",
+					"update_link": "https://github.com/choco-la/TimeDeletingToot/releases/download/1.0/timeddeletingtoot-1.0-an.fx.xpi",
+					"update_hash": "sha256:529a887749ebea059af8837a6fc420cbfce5e71668a41a5de7a5d936085386df"
+				},
+				{
+					"version": "2.0",
+					"update_link": "https://github.com/choco-la/TimeDeletingToot/releases/download/2.0/timeddeletingtoot-2.0-an.fx.xpi",
+					"update_hash": "sha256:50744f12c522c558f52b5a78c1fc478088052d714523ece12f080c9fe7df386c"
+				}
+			]
+		}
+	}
+}
