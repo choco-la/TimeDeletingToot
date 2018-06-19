@@ -24,12 +24,6 @@
     "https://pawoo.net/web/*",
     "https://mstdn.jp/web/*"
   ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
-  },
   "content_scripts": [
     {
       "matches": [
