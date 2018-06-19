@@ -46,12 +46,12 @@
     streamFilter.ondata = (event) => {
       const respStr = decoder.decode(event.data, {stream: true})
       const respJSON = JSON.parse(respStr)
+
+      streamFilter.write(event.data)
+      streamFilter.close()
+
       const tags = respJSON.tags
-      if (!tags) {
-        streamFilter.write(event.data)
-        streamFilter.close()
-        return
-      }
+      if (!tags) return details
 
       const scaleToNumber = {
         s: 1,
@@ -70,9 +70,6 @@
         timeConf.number = timeLimit[1]
         timeConf.scale = timeLimit[2]
       }
-
-      streamFilter.write(event.data)
-      streamFilter.close()
 
       if (!timeConf.number) return details
       const deleteTime = timeConf.number * scaleToNumber[timeConf.scale] * 1000
