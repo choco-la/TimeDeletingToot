@@ -36,7 +36,7 @@
     if (!timeConf.number) return
 
     const deleteTime = timeConf.number * scaleToNumber[timeConf.scale] * 1000
-    setTimeout(() => deleteToot(recvJSON.id), `${deleteTime}`)
+    setTimeout(() => deleteToot(payload.id), `${deleteTime}`)
   }
 
   ws.addEventListener('message', onMessage)
