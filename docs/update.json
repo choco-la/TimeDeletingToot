@@ -11,6 +11,16 @@
 					"version": "2.0",
 					"update_link": "https://github.com/choco-la/TimeDeletingToot/releases/download/2.0/timeddeletingtoot-2.0-an.fx.xpi",
 					"update_hash": "sha256:50744f12c522c558f52b5a78c1fc478088052d714523ece12f080c9fe7df386c"
+				},
+				{
+					"version": "2.0.1",
+					"update_link": "https://github.com/choco-la/TimeDeletingToot/releases/download/2.0.1/timeddeletingtoot-2.0.1-an.fx.xpi",
+					"update_hash": "sha256:50938f40978d1926e2c1bb3eaf14c711198dfb66b8c25e47a8d1f6e96d6e5c6f"
+				},
+				{
+					"version": "2.0.2",
+					"update_link": "https://github.com/choco-la/TimeDeletingToot/releases/download/2.0.2/timeddeletingtoot-2.0.2-an.fx.xpi",
+					"update_hash": "sha256:c7980c4a71da7dbbba2201cba2e98c52235ec67ca8baabd8d356ffeaef74c39e"
 				}
 			]
 		}
