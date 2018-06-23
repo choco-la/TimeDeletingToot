@@ -1,6 +1,7 @@
 (() => {
   'use strict'
   const initState = JSON.parse(document.getElementById('initial-state').textContent)
+  const me = initState.accounts[initState.meta.me].username
   const bearerToken = initState.meta['access_token']
 
   const query = `access_token=${bearerToken}&stream=user`
@@ -19,6 +20,7 @@
     const payload = JSON.parse(recvJSON.payload)
     const tags = payload.tags
     if (!tags) return
+    if (payload.account.acct !== me) return
 
     const timeConf = {
       number: null,
